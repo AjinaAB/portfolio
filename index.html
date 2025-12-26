@@ -24,7 +24,8 @@
         <p class="cta-line">Building intelligent systems like <strong>Car Damage Detection</strong> and IoT automation.</p>
         <div class="hero-ctas">
           <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="assets/AJINA_A_B_resume_23BAM016.docx" download>Download Resume</a>
+         <a class="btn ghost" href="#" onclick="openResume()"> View Resume </a>
+
         </div>
 
         <div class="social">
@@ -89,8 +90,7 @@
 
           <div class="project-links">
             <a class="btn" href="https://github.com/Jo-243/Drivenova" target="_blank">View Code</a>
-            <a class="btn ghost" href="#contact">Contact</a>
-          </div>
+            
         </div>
       </article>
 
@@ -140,7 +140,9 @@
         </div>
         <div>
           <strong>Resume</strong>
-          <p><a href="assets/AJINA_A_B_resume_23BAM016.docx" download>Download Resume (DOCX)</a></p>
+          <p>
+          <a href="#" onclick="openResume()">View Resume</a></p>
+
         </div>
       </div>
 
@@ -162,5 +164,17 @@
   </footer>
 
   <script src="script.js"></script>
+<!-- RESUME MODAL -->
+<div id="resumeModal" class="resume-modal">
+  <div class="resume-content">
+    <button class="close-btn" onclick="closeResume()">✕</button>
+    <iframe
+      src="<iframe src="assets/Resume.pdf"></iframe>
+      title="Ajina A B Resume"
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
+
 </body>
 </html>
